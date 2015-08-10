@@ -1,0 +1,17 @@
+{
+  "name": "yesubc",
+  "authors": [
+    "Sunil <yesubc@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.3.0",
+    "html5shiv": "~3.7.2",
+    
+  }
+}
