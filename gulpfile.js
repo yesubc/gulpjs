@@ -2,30 +2,47 @@
 (function () {
     'use strict';
 
-    var gulp = require('gulp');
-    var wrap = require('gulp-wrap');
-    var sass = require('gulp-sass');
-    var watch = require('gulp-watch');
-    var concat = require('gulp-concat');
-    var notify = require("gulp-notify");
-    var declare = require('gulp-declare');
+    var gulp        = require('gulp'),
+        wrap        = require('gulp-wrap'),
+        sass        = require('gulp-sass'),
+        watch       = require('gulp-watch'),
+        concat      = require('gulp-concat'),
+        notify      = require("gulp-notify"),
+        declare     = require('gulp-declare'),
+        //Css Minify
+        minifyCss   = require('gulp-minify-css'),
+        rename      = require('gulp-rename'),
+        //Js Minify
+        uglify = require('gulp-uglify');
 
     // Source Path
     var SOURCE_SASS = 'resources/scss/**/*.scss';
 
-    // Sass compilation
+    // Sass Compilation
     gulp.task('sass', function () {
-        gulp.src(SOURCE_SASS)
+        gulp.src('resources/scss/**/*.scss')
             .pipe(sass().on('error', sass.logError))
+            .pipe(gulp.dest('public/css'))
+            .pipe(concat('style.css'))
+            .pipe(gulp.dest('public/css'))
+            .pipe(minifyCss({keeSpecialComments:1}))
+            .pipe(rename('style.min.css'))
             .pipe(gulp.dest('public/css'))
             .pipe(notify('Sass Compiled'));
     });
+
+    gulp.task('compress', function() {
+      return gulp.src('resources/js/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('public/js'));
+    });
+
 
     // Watch task
     gulp.task('watch', function () {
         gulp.watch(SOURCE_SASS, ['sass']);
     });
 
-    gulp.task('default', ['sass']);
+    gulp.task('default', ['sass']);    
 
 })();
