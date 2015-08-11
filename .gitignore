@@ -1,0 +1,6 @@
+._*
+.htaccess
+.sass-cache
+public/bower-components/
+public/build/
+node_modules/

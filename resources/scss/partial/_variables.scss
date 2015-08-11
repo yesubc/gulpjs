@@ -1,0 +1,50 @@
+/* --------------------------------------------------------
+Style Sheet for YESUBC
+
+version: 1.0
+last modified: 07.05.2015 by yesubc@gmail.com
+author: Sunil Shrestha
+website: http://yesubc.com
+----------------------------------------------------------*/
+
+//COLOR
+$global-green : #66cc00;
+$global-green-hover : #99ff33;
+$global-green-focus : #339900;
+$global-gold: #ffcc00;
+$global-white: #ffffff;
+$global-black: #000000;
+$global-gray: #333333;
+$lightgray: #cccccc;
+$fadelight: #e8e8e8;
+
+//FLOAT
+$left: left;
+$right: right;
+
+//FONT
+$global-font: "montserratregular","Segoe UI",Arial,sans-serif;
+$global-font-light: "montserratlight","Segoe UI",Arial,sans-serif;
+$global-font-bold : "montserratbold","Segoe UI",Arial,sans-serif;
+$base-font-size: 14px;
+
+//DISPLAY
+$block: block;
+
+// z-index
+
+$main-zindex: 1;
+$nav-zindex: 3;
+$shadow-zindex: 2;
+
+//Width Variables
+$width-default: 100%;
+$width-wrapper: 1000px;
+
+$left-width: (300/1000)*100%;
+$main-width: (700/1000)*100%;
+$right-width: (300/1000)*100%;
+
+$col-left: (300/700)*100%;
+$col-main: (400/700)*100%;
+$col-right: (300/700)*100%;

@@ -1,0 +1,104 @@
+@import "partial/variables";
+@import "partial/mixin";
+@import "partial/reset";
+
+html {
+    font-size: $base-font-size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: $width-default;
+  width: $width-default;
+}
+
+body{
+    color: $global-gray;
+    font: normal $base-font-size $global-font-light;
+    font-weight: 100;
+    @include box-sizing(border-box);
+}
+
+hr {
+  border: none;
+  border-bottom: solid 1px $global-gray;
+}
+
+a{
+    color: $global-gray;
+    text-decoration: none;
+    @include x-transition(all 0.3s ease-in-out);
+    &:hover, &:focus{
+        color: $global-green-hover;
+        text-decoration: underline;
+        outline: none;
+        }
+    }
+
+p{
+    margin-bottom: 15px;
+  color: $global-gray;
+    }
+    
+h1,h2,h3,h4,h5,h6{
+    font-family: $global-font-light;
+    margin-bottom: 20px;
+    }
+
+h1 {
+  font-size: 45px;
+  color: $global-green;
+}
+
+h2 {
+    font-weight: 200; 
+    font-size: 25px;
+    margin: 0;
+    color: $global-green;
+    padding-bottom: 30px;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+h4,.y-slogan {
+    font-weight: 500;
+    font-size: $base-font-size;
+}
+
+h5 {
+    font-weight: 900;
+    font-size: 14px;
+}
+
+h6 {
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.after-pseudo {
+  content: "";
+  overflow: hidden;
+  @extend .dis-block, .clearall;
+}
+
+.dis-block {
+  display: $block;
+}
+
+.roundedborder {
+  @include border-radius (4px);
+}
+
+.float-left{
+    float: $left;
+}
+
+.float-right{
+    float: $right;
+}

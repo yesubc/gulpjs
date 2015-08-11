@@ -1,23 +1,32 @@
-Yesubc
+Gulp and Bower Workshop
 ===================
 
-Introduction
-------------
-This is a application built using HTML5.
+## Getting Started
+    
+    ### Install gulp globally:
+    ```sh
+    $ npm install --global gulp
+    ```
 
-Install some javascript dependencies using `bower` & `npm` 
-    
-    # install client-side dependencies
-    $ bower install 
-    
-    # install gulp
-    $ npm install -g gulp
+    ### Install gulp in your project devDependencies:
+    ```sh
+    $ npm install --save-dev gulp
+    ```
+
+    ### Install Bower
+    ```sh
+    $ npm install -g bower
+    ```sh
         
-    # install server-side dependencies
+    ### Install server-side dependencies
+    ```sh
     $ npm install
+    ```sh
     
-Run `gulp` tasks
-
+    ### Run `gulp` tasks
+    ```sh
     $ gulp
+    $ gulp watch
+    ```sh
     
 Note: You need to install `nodejs`, `npm`, & `bower` if you don't have them already
