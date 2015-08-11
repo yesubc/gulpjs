@@ -18,5 +18,6 @@ Gulp and Bower Workshop
 #### Run Gulp tasks
     $ gulp
     $ gulp watch
+    $ gulp compress //js compress
     
 Note: You need to install `nodejs`, `npm`, & `bower` if you don't have them already.
