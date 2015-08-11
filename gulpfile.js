@@ -31,6 +31,7 @@
             .pipe(notify('Sass Compiled'));
     });
 
+    //Js Minified
     gulp.task('compress', function() {
       return gulp.src('resources/js/*.js')
         .pipe(uglify())
