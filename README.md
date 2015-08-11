@@ -13,20 +13,22 @@ Gulp and Bower Workshop
     $ npm install --save-dev gulp
     ```
 
-    ### Install Bower
+    ### Install Bower:
     ```sh
     $ npm install -g bower
-    ```sh
+    ```
         
     ### Install server-side dependencies
     ```sh
     $ npm install
-    ```sh
+    ```
     
     ### Run `gulp` tasks
     ```sh
     $ gulp
     $ gulp watch
-    ```sh
+    ```
     
 Note: You need to install `nodejs`, `npm`, & `bower` if you don't have them already
+
+yesterday, beside that LMS lunch, i have presents and workshop the GULP with uiux deparment
