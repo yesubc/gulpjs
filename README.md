@@ -3,27 +3,27 @@ Gulp and Bower Workshop
 
 ## Getting Started
     
-    ### Install gulp globally:
+### Install gulp globally:
     ```sh
     $ npm install --global gulp
     ```
 
-    ### Install gulp in your project devDependencies:
+### Install gulp in your project devDependencies:
     ```sh
     $ npm install --save-dev gulp
     ```
 
-    ### Install Bower:
+### Install Bower:
     ```sh
     $ npm install -g bower
     ```
         
-    ### Install server-side dependencies
+### Install server-side dependencies
     ```sh
     $ npm install
     ```
     
-    ### Run `gulp` tasks
+### Run `gulp` tasks
     ```sh
     $ gulp
     $ gulp watch
